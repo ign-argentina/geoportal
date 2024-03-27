@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -29,8 +29,24 @@
   <link href="css/mdb.min.css" rel="stylesheet">
 
   <style>
-    html,
-    body,
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    .row {
+      margin: 0;
+    }
+
     .jarallax {
       height: 100vh;
     }
@@ -38,7 +54,7 @@
     html,
     body,
     .intro-2 {
-      height: 700px;
+      /* height: 700px; */
       text-align: left;
     }
 
@@ -95,7 +111,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto" style="display: flex; align-items: center;">
             <li class="nav-item active">
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
@@ -368,7 +384,7 @@
         </div>
 
         <div class="col" style="text-align: right">
-          <ul class="nav nav-pills" style="float: right">
+          <ul class="nav nav-pills" style="float: right; flex-wrap: nowrap;">
             <li>
               <a class="canales" href="https://www.facebook.com/institutogeograficonacional" target="_blank" rel="Facebook oficial IGN">
                 <img src="https://static.ign.gob.ar/img/socialicons/icono_FB.svg" class="socialicons-1" title="Enlace a Facebook"></a>
